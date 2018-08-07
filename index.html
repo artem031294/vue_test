@@ -1,0 +1,241 @@
+<!DOCTYPE HTML> 
+<html lang="en-US">
+    <head>
+        <title>Vue.JS Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="shortcut icon" href="assets/images/favicon.png" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900|Montserrat:400,700|PT+Serif' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css"  href='assets/css/clear.css' />
+        <link rel="stylesheet" type="text/css"  href='assets/css/common.css' />
+        <link rel="stylesheet" type="text/css"  href='assets/css/font-awesome.min.css' />
+        <link rel="stylesheet" type="text/css"  href='assets/css/carouFredSel.css' />
+        <link rel="stylesheet" type="text/css"  href='assets/css/sm-clean.css' />
+        <link rel="stylesheet" type="text/css"  href='assets/css/style.css' />
+
+        <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <!-- Menu -->
+        <div class="menu-wrapper center-relative">
+            <nav id="header-main-menu">
+                <div class="mob-menu">MENU</div>
+                <ul class="main-menu sm sm-clean">
+                    <li v-for="item in items"><a v-bind:href="item.link">{{ item.text }}</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Home -->
+
+        <div id="home" class="section intro-page">
+            <div class="block content-1170 center-relative center-text">
+                <h1 class="big-title">Lorem ipsum dolors <span>Lorem ipsum dolors</span></h1>
+                <p class="title-desc">Vue Test</p>
+            </div>
+            <!-- Carousel -->
+            <div class="extra-content-full-width">
+                <script>
+                    var fwslider1_speed = "400";
+                    var fwslider1_auto = "false";
+                    var fwslider1_hover = "true";
+                    var fwslider1_start = "0";
+                    var fwslider1_width = "400";
+                    var fwslider1_num = "3";
+                </script>
+                <div class="fwslider1 fw-image-slider-holder list_carousel relative">
+                    <div class="caroufredsel_wrapper">
+                        <ul id="fwslider1" class="fw-image-slider" >
+                            <li v-for="picture in pictures" class="fw-slide">
+                                <img v-bind:src="picture.url " alt="">
+                                <a v-bind:href="picture.a_href"><p class="fw-slide-text">{{  picture.desc }}</p></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    <div id="fwslider1_fw_image_slide_pager" class="fw_carousel_pagination"></div>
+                </div>
+                <a id="fwslider1_fw_next" class="carousel_fw_next" href="#"></a>
+                <div class="clear"></div>
+            </div>
+            <!-- End Of Carousel -->
+        </div>
+
+        <!-- About -->
+
+        <div id="about" class="section">
+            <div class="block content-1170 center-relative">
+                <div class="section-title-holder left">
+                    <h2 class="entry-title">About Us</h2>
+                </div>
+                <div class="section-content-holder right">
+                    <div class="content-wrapper">
+                        <div class="content-title-holder">
+                            <p class="content-title">About</p>
+                        </div>
+                        <div class="one_half ">
+                            Polor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum <strong>dolor sit amet</strong> consectetur est adipisicing elit, sed do eiusmod tempor
+                        </div>
+                        <div class="one_half last " id="about-bio">
+                            <span style="color: #e54b76;"><strong>2001-2003 ·</strong></span> <span style="color:#727190;"><em>Lorem ipsum dolor sit amet </em></span><br>
+                            <span style="color: #e54b76;"><strong>2003-2006 ·</strong></span> <span style="color:#727190;"><em>Lorem ipsum dolor sit amet </em></span><br>
+                            <span style="color: #e54b76;"><strong>2006-2010 ·</strong></span> <span style="color:#727190;"><em>Lorem ipsum dolor sit amet </em></span><br>
+                            <span style="color: #e54b76;"><strong>2010-2013 ·</strong></span> <span style="color:#727190;"><em>Lorem ipsum dolor sit amet </em></span><br>
+                            <span style="color: #e54b76;"><strong>2013-2016 ·</strong></span> <span style="color:#727190;"><em>Lorem ipsum dolor sit amet </em></span><br>
+                        </div><div class="clear"></div>
+                        <br>
+                        <br>
+                    </div>
+
+                    <div class="full-width ">
+                        <script>
+                            var aboutImage_speed = "500";
+                            var aboutImage_auto = "false";
+                            var aboutImage_hover = "true";
+                        </script>
+                        <div class="image-slider-wrapper relative img aboutImage">
+                            <a id="aboutImage_next" class="image_slider_next" href="#"></a>
+                            <div class="caroufredsel_wrapper">
+                                <ul id="aboutImage" class="image-slider slides">
+                                    <li><img src="assets/demo-images/about_img_04.jpg" alt=""></li>
+                                    <li><img src="assets/demo-images/about_img_05.jpg" alt=""></li>
+                                    <li><img src="assets/demo-images/about_img_06.jpg" alt=""></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <script>
+                            var team1_speed = "500";
+                            var team1_auto = "false";
+                            var team1_hover = "true";
+                        </script>
+                        <div class="image-slider-wrapper relative team team1">
+                            <a id="team1_next" class="image_slider_next" href="#"></a>
+                            <div class="caroufredsel_wrapper">
+                                <ul id="team1" class="image-slider slides">
+                                    <li>
+                                        <div class="member-content-holder">
+                                            <h4 class="member-name">Robert Williams</h4>
+                                            <p class="member-position">LEAD DESIGNER</p>
+                                            <div class="member-content">
+                                                Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.<br>
+                                            </div>
+                                        </div>
+                                        <div class="member-image-holder">
+                                            <img src="assets/demo-images/about_img_01.jpg" alt="">
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+
+                                    <li>
+                                        <div class="member-content-holder">
+                                            <h4 class="member-name">John Doe</h4>
+                                            <p class="member-position">SEO MASTER</p>
+                                            <div class="member-content">
+                                                Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.<br>
+                                            </div>
+                                        </div>
+                                        <div class="member-image-holder">
+                                            <img src="assets/demo-images/about_img_02.jpg" alt="">
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+
+                                    <li>
+                                        <div class="member-content-holder">
+                                            <h4 class="member-name">John Doe</h4>
+                                            <p class="member-position">PSD GURU</p>
+                                            <div class="member-content">
+                                                Eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est lorem adipisicing elit, sed do eiusmod tempor polor sit amet consectetur.<br>
+                                            </div>
+                                        </div>
+                                        <div class="member-image-holder">
+                                            <img src="assets/demo-images/about_img_03.jpg" alt="">
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>   <!-- end full-width div -->
+
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!-- Contact -->
+
+        <div id="contact" class="section">
+            <div class="block content-1170 center-relative">
+                <div class="section-title-holder right">
+                    <h2 class="entry-title">Contact Us</h2>
+                </div>
+                <div class="section-content-holder left">
+                    <div class="content-wrapper">
+                        <div class="one_half ">
+                            <p>Consectetur adipisicing elit sed eiusmod tempor incididunt ut dolore magna labore eiusmod. Lorem ipsum dolor sit amet consectetur est adipisicing elit, sed do eiusmod tempor.</p>
+                            <br>
+                            <p><strong><span style="color: #e64b77;">Incididunt ut dolore</span></strong> magna labore eiusmod. Dolor sit amet consectetur est adipisicing elit, sed do eiusmod.</p>
+                        </div>
+                        <div class="one_half last">
+                            <div class="contact-form">
+                                <p><input id="name" type="text" name="your-name" placeholder="Name"></p>
+                                <p><input id="contact-email" type="email" name="your-email" placeholder="Email"></p>
+                                <p><input id="subject" type="text" name="your-subject" placeholder="Subject"></p>
+                                <p><textarea id="message" name="your-message" placeholder="Message"></textarea></p>
+                                <p><input type="submit" onClick="SendMail()" value="SEND"></p>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="full-width" id="gmap">
+                        <iframe v-if="show == true" v-bind:src="iframe_src" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <footer>
+            <div class="footer content-1170 center-relative">
+                <ul>
+                    <li class="copyright-footer">
+                        © 2018 All rights reserved. | Vue.JS Test
+                    </li>
+                    <li class="social-footer">
+                        <a href="#"><span class="fa fa-twitter"></span></a>
+                        <a href="#"><span class="fa fa-behance"></span></a>
+                        <a href="#"><span class="fa fa-dribbble"></span></a>
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                        <a href="#"><span class="fa fa-rss"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+
+        <!--Load JavaScript-->
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script type='text/javascript' src='assets/js/jquery.sticky-kit.min.js'></script>
+        <script type='text/javascript' src='assets/js/jquery.smartmenus.min.js'></script>
+        <script type='text/javascript' src='assets/js/jquery.sticky.js'></script>
+        <script type='text/javascript' src='assets/js/jquery.dryMenu.js'></script>
+        <script type='text/javascript' src='assets/js/jquery.carouFredSel-6.2.0-packed.js'></script>
+        <script type='text/javascript' src='assets/js/jquery.mousewheel.min.js'></script>
+        <script type='text/javascript' src='assets/js/jquery.touchSwipe.min.js'></script>
+        <script type='text/javascript' src='assets/js/jquery.easing.1.3.js'></script>
+        <script type='text/javascript' src='assets/js/imagesloaded.pkgd.js'></script>
+        <script type='text/javascript' src='assets/js/main.js'></script>
+        <script src="assets/js/vue.js"></script>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
